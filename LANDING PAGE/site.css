@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #c1cbfb;
+    color: #001b5e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li i {
+    margin-right: 5px; /* Add spacing between icon and text */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+/* Hero Section Styles */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #bdb4ff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+/* Features Section Styles */
+.features {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature i {
+    color: #007bff;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #bdb4ff;
+    color: #0a0041;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+/* about field */
+/* About Section Styles */
+.about {
+    position: relative;
+    color: #ffffff; /* Change the color to your desired color */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    margin-right: 700px; /* Adjust spacing between text and image */
+}
+.text p {
+    top: 500px;
+    width: 900%; /* Ensure the paragraph covers the available space */
+}
+
+.image {
+    margin-right: 20px; /* Adjust spacing between text and image as needed */
+} 
+
+
+.image img {
+    max-width: 100%; /* Set maximum width to 100% of its container */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+.about h2 {
+    color: #bdb4ff;
+    position: relative;
+    display: inline-block;
+    width: 900%;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: ; /* Set initial width to 0 */
+    height: 2px;
+    background-color: #ffffff; /* Change to white color */
+    transition: width 0.7s ease;
+    z-index: -1;
+}
+
+.about h2:hover::after {
+    width: 15%; /* Expand width to 100% on hover */
+}
+
+
+
+.about:hover .underline {
+    background-color: #ffffff; /* Change to white color on hover */
+}
+
+
+/* the background image showing in middle */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('data-analytics.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Adjust the opacity of the background image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.797); /* Change the opacity here (0.5 means 50% opacity) */
+    z-index: -1; /* Ensure it's behind other content */
+}
